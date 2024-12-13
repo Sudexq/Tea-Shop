@@ -1,0 +1,100 @@
+/* Login Page Container */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: rgba(165, 42, 42, 1); /* Dark red */
+  font-size: 1.8rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Fields */
+.login-form label {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: rgba(165, 42, 42, 1); /* Dark red focus border */
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin: -10px 0 10px;
+}
+
+/* Login Button */
+.login-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(165, 42, 42, 1); /* Dark red */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #e64545; /* Lighter red */
+}
+
+/* Sign Up Redirect Link */
+.signup-link {
+  color: rgba(165, 42, 42, 1); /* Dark red */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .login-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-form input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .login-button {
+    font-size: 0.9rem;
+  }
+}

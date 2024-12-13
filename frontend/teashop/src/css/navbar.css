@@ -1,0 +1,131 @@
+/* NAVBAR BASE STYLES */
+.navbar {
+  background-color: rgba(165, 42, 42, 0.9); /* Red background */
+  display: flex;
+  justify-content:flex-start;
+  align-items: center; /* Center items vertically */
+  padding: 0 5vh; /* Horizontal padding */
+  height: 8vh; /* Adjust height to fit content */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3vh;
+}
+
+/* Logo */
+.navbar .logo img {
+  width: 30px; /* Adjust logo size */
+  height: auto;
+  margin-right: 5vh;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2vw; /* Spacing between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 2.4vh 1vw;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.nav-links a:hover:not(.cart) {
+  background-color: #fff; /* Light red background */
+  color: rgba(165, 42, 42, 1); /* Dark red text */
+}
+
+/* Authentication Buttons */
+.nav-links a:nth-last-child(-n + 2) {
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 0.5vh 1.5vw; /* Adjust padding for buttons */
+}
+
+.nav-links a:nth-last-child(-n + 2):hover {
+  background-color: white;
+  color: rgba(165, 42, 42, 1);
+}
+
+/* Cart Icon */
+.nav-links .cart {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-links .cart:hover {
+    color: rgb(255, 208, 0);
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.hamburger:hover {
+  color: #ffcccb;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 8vh; /* Below navbar */
+    left: 0;
+    background-color: rgba(165, 42, 42, 0.95);
+    width: 60%;
+    padding: 2vh;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar.responsive .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    text-align: left;
+    padding: 1vh 2vw;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 1vh 3vw;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 1vh 1vw;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .hamburger {
+    font-size: 1.8rem;
+  }
+}

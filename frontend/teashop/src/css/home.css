@@ -1,0 +1,53 @@
+.welcome-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('C:\Users\suden\OneDrive\Desktop\teaShop\teashop\src\photos\welcomepage-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Görüntüye hafif karartma efekti ekler */
+  }
+  
+  .content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .welcome-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    background-color: #ffcc00;
+    color: black;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffbb00;
+  }
+  

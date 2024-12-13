@@ -1,0 +1,25 @@
+/*wrong path*/
+.wrongPath {
+  text-align: center;
+  font-size: xx-large;
+  color: rgb(0, 0, 145);
+}
+.wrongPath a {
+  text-decoration: none;
+  color: white;
+  padding: 2vh;
+  border-radius: 2vh;
+  background-color: rgb(0, 0, 145);
+  box-shadow: 0 0 1vh 0 black;
+  transition: all 1s;
+  font-size: large;
+}
+.wrongPath a:hover {
+  padding: 3vh;
+  transition: all 1s;
+}
+/*wrong path*/
+
+.bottomNavbar{
+  margin-bottom: 5vh;
+}

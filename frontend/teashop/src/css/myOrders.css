@@ -1,0 +1,47 @@
+.my-orders-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.my-orders-container h3 {
+  padding: 10px 20px;
+  background-color: rgba(165, 42, 42, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5vh;
+}
+
+.orders-list {
+  margin-top: 20px;
+}
+
+.order-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.order-item h4 {
+  margin-bottom: 10px;
+}
+
+.no-orders {
+  margin-top: 20px;
+}
+
+.browse-products {
+  padding: 10px 20px;
+  background-color: rgba(165, 42, 42, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.browse-products:hover {
+  background-color: rgba(200, 50, 50, 1);
+}

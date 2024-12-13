@@ -1,0 +1,22 @@
+.account-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.account-container-h2 {
+  margin-bottom: 20px;
+  color: rgba(34, 139, 34, 1); /* Dark green */
+}
+
+.account-container p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
